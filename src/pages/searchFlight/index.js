@@ -148,9 +148,13 @@ const SearchFlight = () => {
   useEffect(() => {
     const newOrigin = query.get("origin");
     const newDestination = query.get("destination");
+    // const pageParam = query.get("page");
+    // const limitParam = query.get("limit");
     const newParams = {
       origin: newOrigin,
       destination: newDestination,
+      // currentPage: pageParam,
+      // limit: limitParam
       // ...page
     };
     setOrigin(newOrigin);
